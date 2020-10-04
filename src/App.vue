@@ -1,27 +1,28 @@
 <template>
   <div>
-    <h1>{{ title }}</h1>
+    <app-header></app-header>
     <users></users>
+    <app-footer></app-footer>
   </div>
 </template>
 
 <script>
-import Users from './Users';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import Users from './components/Users';
 
 export default {
   components: {
+    'app-header': Header,
+    'app-footer': Footer,
     'users': Users,
   },
   data () {
     return {
-      title: 'Vue App',
     }
   },
 }
 </script>
 
-<style scoped>
-h1 {
-  color: purple;
-}
+<style>
 </style>
