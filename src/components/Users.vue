@@ -11,23 +11,17 @@
 
 <script>
 export default {
-  data () {
+  props: {
+    users: {
+      type: Array,
+      required: true,
+    },
+  },
+  data() {
     return {
-      users: [{
-        name: 'Antonio',
-        job: 'Software engineer',
-        visible: false,
-      }, {
-        name: 'Marko',
-        job: 'Dev ops',
-        visible: false,
-      }, {
-        name: 'Ivan',
-        job: 'Project manager',
-        visible: false,
-      }]
+
     }
-  }
+  },
 }
 </script>
 

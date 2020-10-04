@@ -1,7 +1,7 @@
 <template>
   <div>
     <app-header></app-header>
-    <users></users>
+    <users :users="users"></users>
     <app-footer></app-footer>
   </div>
 </template>
@@ -19,6 +19,19 @@ export default {
   },
   data () {
     return {
+      users: [{
+        name: 'Antonio',
+        job: 'Software engineer',
+        visible: false,
+      }, {
+        name: 'Marko',
+        job: 'Dev ops',
+        visible: false,
+      }, {
+        name: 'Ivan',
+        job: 'Project manager',
+        visible: false,
+      }]
     }
   },
 }
