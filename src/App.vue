@@ -1,22 +1,22 @@
 <template>
   <div>
     <h1>{{ title }}</h1>
-    <p>{{ greeting() }}</p>
+    <users></users>
   </div>
 </template>
 
 <script>
+import Users from './Users';
+
 export default {
+  components: {
+    'users': Users,
+  },
   data () {
     return {
-      title: 'Hello vue-cli',
+      title: 'Vue App',
     }
   },
-  methods: {
-    greeting () {
-      return 'Hello World'
-    }
-  }
 }
 </script>
 
