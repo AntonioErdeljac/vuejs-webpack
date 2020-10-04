@@ -1,14 +1,20 @@
 <template>
   <header>
-    <h1>{{ title }}</h1>
+    <h1 @click="changeTitle">{{ title }}</h1>
   </header>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      title: 'Vue Users'
+  props: {
+    title: {
+      type: String,
+      required: true,
+    },
+  },
+  methods: {
+    changeTitle() {
+      this.title = 'Changed'
     }
   }
 }

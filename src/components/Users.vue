@@ -6,6 +6,7 @@
         <h3 v-show="user.visible">{{ user.job }}</h3>
       </li>
     </ul>
+    <button @click="deleteUser">Delete one</button>
   </div>
 </template>
 
@@ -22,6 +23,11 @@ export default {
 
     }
   },
+  methods: {
+    deleteUser() {
+      this.users.pop();
+    }
+  }
 }
 </script>
 

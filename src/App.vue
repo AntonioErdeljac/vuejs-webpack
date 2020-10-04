@@ -1,8 +1,10 @@
 <template>
   <div>
-    <app-header></app-header>
+    <app-header :title="title"></app-header>
     <users :users="users"></users>
-    <app-footer></app-footer>
+    <hr />
+    <users :users="users"></users>
+    <app-footer :title="title"></app-footer>
   </div>
 </template>
 
@@ -31,7 +33,8 @@ export default {
         name: 'Ivan',
         job: 'Project manager',
         visible: false,
-      }]
+      }],
+      title: 'Vue Users',
     }
   },
 }
