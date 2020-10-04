@@ -1,6 +1,6 @@
 <template>
   <div>
-    <app-header :title="title"></app-header>
+    <app-header v-on:changeTitle="updateTitle($event)" :title="title"></app-header>
     <users :users="users"></users>
     <hr />
     <users :users="users"></users>
@@ -37,6 +37,11 @@ export default {
       title: 'Vue Users',
     }
   },
+  methods: {
+    updateTitle(event) {
+      this.title = event;
+    }
+  }
 }
 </script>
 

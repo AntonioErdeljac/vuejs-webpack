@@ -14,7 +14,7 @@ export default {
   },
   methods: {
     changeTitle() {
-      this.title = 'Changed'
+      this.$emit('changeTitle', 'Vue Test');
     }
   }
 }
