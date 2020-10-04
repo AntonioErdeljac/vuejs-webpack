@@ -27,6 +27,24 @@ export default {
     deleteUser() {
       this.users.pop();
     }
+  },
+  beforeCreate() {
+    alert('Before creation.')
+  },
+  created() {
+    alert('Created.')
+  },
+  beforeMount() {
+    alert('Before mount.')
+  },
+  mounted() {
+    alert('Mounted.')
+  },
+  beforeUpdate() {
+    alert('Before update.')
+  },
+  updated() {
+    alert('Updated.')
   }
 }
 </script>

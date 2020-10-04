@@ -2,8 +2,6 @@
   <div>
     <app-header v-on:changeTitle="updateTitle($event)" :title="title"></app-header>
     <users :users="users"></users>
-    <hr />
-    <users :users="users"></users>
     <app-footer :title="title"></app-footer>
   </div>
 </template>
